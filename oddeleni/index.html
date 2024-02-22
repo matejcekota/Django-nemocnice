@@ -1,0 +1,14 @@
+{% extends "oddeleni/layout.html" %}
+
+{% block body %}
+
+<ul>
+    {% for flight in oddeleni %}
+        <li><a href="{% url 'oddeleni' oddeleni.id %}">
+            Oddeleni {pokoje.id}: -> {pokoje.Pokoj} {pokoje.Delka}
+        </a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
